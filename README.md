@@ -9,6 +9,10 @@ If you have any questions or just want to connect, feel free to reach out:
 - **Email:** [M1000@mailfence.com](mailto:M1000@mailfence.com)
 - **Discord:** thatrandomfurry
 
+  ### website!!!
+
+  https://apollo-os.org/
+
 
 # TODO lists:
 
