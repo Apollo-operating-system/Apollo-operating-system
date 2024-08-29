@@ -16,7 +16,7 @@ If you have any questions or just want to connect, feel free to reach out:
 
 # TODO lists:
 
-## TODO List
+### TODO List
 
 ✅ = done
 ⚙️ = working on it
