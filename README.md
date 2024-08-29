@@ -16,10 +16,22 @@ If you have any questions or just want to connect, feel free to reach out:
 
 # TODO lists:
 
+## TODO List
 
-### OS TODO list:
+✅ = done
+⚙️ = working on it
+❌ = not done
 
-I'll sort this later
+- ❌ **Create a good TODO list**
+- ⚙️ **Compiler 1 (C1):** Develop a compiler written in C to compile HolyC
+- ❌ **Compiler 2 (C2):** Create a compiler written in HolyC to compile HolyC
+- ❌ **Basic Bootloader:** Implement an extremely basic bootloader
+- ❌ **Kernel Development:** Build a kernel with minimal functionality
+- ❌ **Kernel Terminal:** make a terminal for the kernel
+- ✅ **Cry**
+- ❌ **Debugging:** Debug all components
+- ❌ **Feature Expansion:** Add more features to make the system usable
+- ✅ **Cry (again)**
 
 
 ### general TODO list:
