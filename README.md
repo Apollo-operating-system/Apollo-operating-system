@@ -34,7 +34,7 @@ If you have any questions or just want to connect, feel free to reach out:
 - ✅ **Cry (again)**
 
 
-### general TODO list:
+### general TODO list (stop thinking this is serious (it is a joke)):
 
 1. Invent a brand new OS (because, why not?).
 2. Build a CPU that makes the PS3 look like a pocket calculator.
