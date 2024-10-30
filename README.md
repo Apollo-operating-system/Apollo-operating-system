@@ -1,7 +1,6 @@
 # Apollo OS
 
 
-Apollo  is postponed for a while (sorry) and for now I'm gonna work on a game 
 
 Apollo OS is an OS made to run on the power PC cell broadband engine architecture. (but there will be a cell CPU emulator and X86 port) 
 
