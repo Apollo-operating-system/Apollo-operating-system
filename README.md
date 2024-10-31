@@ -38,4 +38,4 @@ If you have any questions or just want to connect, feel free to reach out:
 # unholy C:
 
 
-I'll add the docs here later but unholy C is basically Holy C with an ultra minimal syntax (like C64 BASIC) and some other crap 
+https://github.com/Apollo-operating-system/unholy-C
