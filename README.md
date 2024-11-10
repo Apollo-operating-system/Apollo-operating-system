@@ -8,8 +8,7 @@ Apollo OS is an OS made to run on the power PC cell broadband engine architectur
 
 If you have any questions or just want to connect, feel free to reach out:
 
-- **Email:** [M1000@mailfence.com](mailto:M1000@mailfence.com)
-- **Discord:** thatrandomfurry.
+- **Email:** [Apollo-operating-system@protonmail.com](mailto:Apollo-operating-system@protonmail.com)
 
   ### website!!!
 
