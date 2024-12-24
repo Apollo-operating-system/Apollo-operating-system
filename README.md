@@ -1,40 +1,41 @@
-# Apollo OS
+# apollo-OS Architecture Overview
 
+## Architecture
 
+- **CPU Architecture:** X86_64 and ARM64
+- **Tasking:** Multi-tasking
+- **Cored:** Multi-cored
+- **Memory Map:** Single-address-map (identity-mapped)
+- **Networking:** Networked
+- **Type:** PC operating system
 
-Apollo OS is an OS made to run on the power PC cell broadband engine architecture. (but there will be a cell CPU emulator and X86 port) 
+## Ring 0: Adam (Kernel)
 
-### Contact
+1. System Bootstraps
+2. Starts scheduler
+3. Starts memory manager
+4. Starts I/O manager
+5. Initializing Device Drivers
+6. Starts Network Stack
+7. Mounting Filesystems
+8. Start Security Services
+9. Initializes Interrupt Handling
+10. Configure System Calls
+11. Initializes Resource Management
+12. Starts Error Handling & Logging
 
-If you have any questions or just want to connect, feel free to reach out:
+## Ring 1: Device Drivers
 
-- **Email:** [Apollo-operating-system@protonmail.com](mailto:Apollo-operating-system@protonmail.com)
+- Some kernel bypass for efficiency
 
-  ### website!!!
+## Ring 2: Built-in Applications and GUI
 
-  https://apollo-os.org/
+- Apps that are part of the OS and user input handling
 
+## Ring 2.5: Third-Party Code
 
-# TODO lists:
+- Any third-party applications and code
 
+## Ring 3: Untrusted Mode
 
-### TODO List
-
-✅ = done
-⚙️ = working on it
-❌ = not done
-
-- ❌ **Create a good TODO list**
-- ⚙️ **Compiler 1 (C1):** Develop a compiler to compile unholy C
-- ❌ **Compiler 2 (C2):** Create a compiler written in unHolyC to compile unHolyC
-- ❌ **Basic Bootloader:** Implement an extremely basic bootloader
-- ❌ **Kernel Development:** Build a kernel with minimal functionality
-- ❌ **Kernel Terminal:** make a terminal for the kernel
-- ✅ **Cry**
-- ❌ **make X86 port**
-
-
-# unholy C:
-
-
-https://github.com/Apollo-operating-system/unholy-C
+- Apps running in an untrusted environment
