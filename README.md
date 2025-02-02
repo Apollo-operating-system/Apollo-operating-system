@@ -16,13 +16,14 @@
 ### **Ring 0: Stolas** (Core 0 | Primary Kernel)
 
 **Ring 0A:**
+
 1. System bootstrap & hardware enumeration
 2. Scheduler initialization
 3. Physical memory manager bring-up
 4. I/O abstraction layer
 
 **Ring 0B:**
-5. Network stack initialization 
+5. Network stack initialization
 6. Filesystem mounting
 7. Security subsystem pre-launch
 8. Interrupt controller configuration
