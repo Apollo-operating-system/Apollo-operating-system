@@ -1,41 +1,52 @@
-# apollo-OS Architecture Overview
+# Apollo-OS Architecture
 
-## Architecture
 
-- **CPU Architecture:** X86_64 and ARM64
-- **Tasking:** Multi-tasking
-- **Cored:** Multi-cored
-- **Memory Map:** Single-address-map (identity-mapped)
-- **Networking:** Networked
-- **Type:** PC operating system
+## Core Architecture
+- **CPU Support**: x86_64 and ARM64
+- **Tasking**: Preemptive multi-tasking
+- **Memory**: Identity-mapped single address space
+- **Networking**: Integrated stack from boot
+- **Kernel Model**: Dual-core synchronized kernels ("Stolas" & "Blitzø")
 
-## Ring 0: Adam (Kernel)
 
-1. System Bootstraps
-2. Starts scheduler
-3. Starts memory manager
-4. Starts I/O manager
-5. Initializing Device Drivers
-6. Starts Network Stack
-7. Mounting Filesystems
-8. Start Security Services
-9. Initializes Interrupt Handling
-10. Configure System Calls
-11. Initializes Resource Management
-12. Starts Error Handling & Logging
 
-## Ring 1: Device Drivers
+## Kernel Workflow
 
-- Some kernel bypass for efficiency
 
-## Ring 2: Built-in Applications and GUI
+### **Ring 0: Stolas** (Core 0 | Primary Kernel)
 
-- Apps that are part of the OS and user input handling
+**Phase 0A - Foundation**
+1. System bootstrap & hardware enumeration
+2. Scheduler initialization
+3. Physical memory manager bring-up
+4. I/O abstraction layer
 
-## Ring 2.5: Third-Party Code
+**Phase 0B - System Services**
+5. Network stack initialization 
+6. Filesystem mounting
+7. Security subsystem pre-launch
+8. Interrupt controller configuration
 
-- Any third-party applications and code
+**Phase 0C - Resource Orchestration**
+9. Syscall interface design
+10. Resource monitoring daemon
+11. Distributed error logging system
+12. Blitzø kernel handoff protocol
 
-## Ring 3: Untrusted Mode
 
-- Apps running in an untrusted environment
+### **Ring 0: Blitzø** (Core 1 | Hardware Kernel)
+
+**Phase 0A - Driver Fabrication**
+1. GAIOIR (Graphics/Audio I/O IR) driver JIT compilation
+2. Dynamic hardware configuration profiling
+3. Priority-driven driver activation sequence
+
+**Phase 0B - Hardware Symphony**
+4. Software-defined I/O pipelines
+5. Interrupt-driven event system
+6. Kernel-level hardware telemetry
+
+
+## Driver Model
+
+Apollo drivers utilize just-in-time compilation of our GAIOIR intermediate representation - a unified abstraction layer that transpiles to vendor-specific GPU, audio, and I/O instructions. This enables hardware-agnostic driver development.
