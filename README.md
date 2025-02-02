@@ -1,7 +1,7 @@
 # Apollo-OS Architecture
 
 
-## Core Architecture
+## Architecture
 - **CPU Support**: x86_64 and ARM64
 - **Tasking**: Preemptive multi-tasking
 - **Memory**: Identity-mapped single address space
@@ -26,7 +26,7 @@
 
 5. Network stack initialization
 6. Filesystem mounting
-7. Security subsystem pre-launch
+7. Security subsystem 
 8. Interrupt controller configuration
 
 **Ring 0C:**
