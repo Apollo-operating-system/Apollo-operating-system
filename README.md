@@ -23,12 +23,14 @@
 4. I/O abstraction layer
 
 **Ring 0B:**
+
 5. Network stack initialization
 6. Filesystem mounting
 7. Security subsystem pre-launch
 8. Interrupt controller configuration
 
 **Ring 0C:**
+
 9. Syscall interface design
 10. Resource monitoring daemon
 11. Distributed error logging system
@@ -38,11 +40,13 @@
 ### **Ring 0: Blitzø** (Core 1 | Hardware Kernel)
 
 **Ring 0A:**
+
 1. GAIOIR (Graphics/Audio I/O IR) driver JIT compilation
 2. Dynamic hardware configuration profiling
 3. Priority-driven driver activation sequence
 
 **Ring 0B:**
+
 4. Software-defined I/O pipelines
 5. Interrupt-driven event system
 6. Kernel-level hardware telemetry
