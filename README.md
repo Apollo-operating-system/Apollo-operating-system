@@ -5,7 +5,7 @@
 - **CPU Support**: x86_64 and ARM64
 - **Tasking**: Preemptive multi-tasking
 - **Memory**: Identity-mapped single address space
-- **Networking**: Integrated stack from boot
+- **Networking**: networked 
 - **Kernel Model**: Dual-core synchronized kernels ("Stolas" & "Blitzø")
 
 
@@ -15,19 +15,19 @@
 
 ### **Ring 0: Stolas** (Core 0 | Primary Kernel)
 
-**Phase 0A - Foundation**
+**Ring 0A:**
 1. System bootstrap & hardware enumeration
 2. Scheduler initialization
 3. Physical memory manager bring-up
 4. I/O abstraction layer
 
-**Phase 0B - System Services**
+**Ring 0B:**
 5. Network stack initialization 
 6. Filesystem mounting
 7. Security subsystem pre-launch
 8. Interrupt controller configuration
 
-**Phase 0C - Resource Orchestration**
+**Ring 0C:**
 9. Syscall interface design
 10. Resource monitoring daemon
 11. Distributed error logging system
@@ -36,12 +36,12 @@
 
 ### **Ring 0: Blitzø** (Core 1 | Hardware Kernel)
 
-**Phase 0A - Driver Fabrication**
+**Ring 0A:**
 1. GAIOIR (Graphics/Audio I/O IR) driver JIT compilation
 2. Dynamic hardware configuration profiling
 3. Priority-driven driver activation sequence
 
-**Phase 0B - Hardware Symphony**
+**Ring 0B:**
 4. Software-defined I/O pipelines
 5. Interrupt-driven event system
 6. Kernel-level hardware telemetry
